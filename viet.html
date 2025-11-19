@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="viet.css" />
+  <link rel="icon" type="./public/favicon-logo.png" href="/public/favicon-logo.png" alt="logo avec temple japonnais">
+  <title>JapanTrip</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="/public/image-logo-removebg-preview.png" alt="image-logo" />
+    </div>
+
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="trip.html">Voyage</a></li>
+        <li><a href="technology.html">Technologie</a></li>
+        <li><a href="architectural.html">Architecture</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-------------------------------------------------------------------- START -->
+    <div class="start">
+      <h1>Insolite : Vietnam à moto</h1>
+      <input class="desire" id="want" type="text" name="want" placeholder=" Quelle durée de séjour ? " />
+    </div>
+
+    <!-------------------------------------------------------------------- FORM -->
+    <div class="form">
+      <label for="range">Budget :</label>
+      <span class="range-min">100€</span>
+
+      <input type="range" id="price" name="price" min="100" max="10000" />
+
+      <span class="range-max">1000€</span>
+
+      <label for="sort">Filter par :</label>
+      <select name="item" id="item">
+        <option value="authentic">Authentique</option>
+        <option value="adventure">Aventure</option>
+        <option value="history">Histoire & culture</option>
+        <option value="insolite">Insolite</option>
+      </select>
+    </div>
+      <!------------------------------------------------------------------- PAD / VOYAGES -->
+    <section class="pad">
+      <div class="card">
+        <img src="./public/viet2.jpg" alt="" />
+        <span class="title">Authentique</span>
+
+        <label class="like-btn">
+          <input type="checkbox" />
+          <span class="heart">❤️</span>
+        </label>
+
+        <span class="time">10 jours</span>
+        <p>Tokyo → Hakone → Kyoto → Nara → Osaka</p>
+        <button>En savoir plus</button>
+      </div>
+
+      <div class="card">
+        <img src="./public/viet3.jpg" alt="Tokyo la nuit" />
+        <span class="title">Histoire & Culture</span>
+
+        <label class="like-btn">
+          <input type="checkbox" />
+          <div class="heart">❤️</div>
+        </label>
+
+        <span class="time">7 jours</span>
+        <p>Tokyo → Yokohama → Tokaïdo → Nagoya</p>
+        <button>En savoir plus</button>
+      </div>
+
+      <div class="card">
+        <img src="./public/viet 4.jpg" alt="Randonneur dans les montagnes japonnaises, torii en face de lui" />
+        <span class="title">Nature & Aventure</span>
+
+        <label class="like-btn">
+          <input type="checkbox" />
+          <div class="heart">❤️</div>
+        </label>
+
+        <span class="time">8 jours</span>
+        <p>Alpes japonaises → Kanazawa → Takayama</p>
+        <button>En savoir plus</button>
+      </div>
+    </section>
+</main>
+</body>

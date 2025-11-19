@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" type="./public/favicon-logo.png" href="/public/favicon-logo.png" alt="logo avec temple japonnais">
+  <title>JapanTrip</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/public/image-logo-removebg-preview.png" alt="image-logo" />
+    </div>
+
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="trip.html">Voyage</a></li>
+        <li><a href="technology.html">Technologie</a></li>
+        <li><a href="architectural.html">Architecture</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Contactez-nous</h1>
+ <form>
+      <div>
+    <label for="Name"> Nom : </label>
+    <input for="text" id="name" name="name" placeholder="Nom" required>
+    </div>
+
+  <div>
+    <label for="First-name"> Prénom : </label>
+    <input for="text" id="Fist-name" placeholder=" Prenom" required>
+  </div>
+
+  <div>
+    <label for="email"> Email : </label>
+    <input type="email" id="email" name="email" placeholder="email@mail.com">
+  </div>
+
+  <div>
+    <label for="subject">Quel est le sujet de votre message ? </label>
+    <select name="subject" id="subject" required>
+      <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+      <option value="booking">Je souhaite réserver des visites avec Taejun </option>
+      <option value="trip">Je souhaite réserver un séjour </option>
+      <option value="my-booking">À propos de ma réservation </option>
+      <option value="other">Autre </option>
+    </select>
+  </div>
+  <div>
+    <label for="message">Votre message : </label>
+    <textarea class="text-client"id="message" name="message" placeholder="Bonjour,je vous contacte car ..." required></textarea>
+    </div>
+
+
+
+    <button type="submit">Envoyer votre message</button>
+
+</form>
+</body>
+</html>

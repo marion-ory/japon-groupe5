@@ -1,0 +1,522 @@
+body{
+  background: linear-gradient(180deg, #faf1e4 0%, #f1ddba 60%, #e8cfa3 100%);
+}
+
+/* ---------------------------- HEADER : NAVBAR ------------------------------------------- */
+*{
+  margin:0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 8vh;
+  padding: 1.5vh 3vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  width: 18vw;
+  max-width: 200px;
+  height: auto;
+  max-height: 8vh;
+  margin: 0;
+  padding: 1vh 0;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+nav{
+  display: flex;
+  padding: 2vh 3vw;            /* 20px -> vh/vw */
+  gap: 2vw;                    /* 25px -> vw */
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration-line: none;
+  justify-content: space-between;
+  color:  #6a1010 ;
+  font-size: 20px;
+  cursor: pointer;
+  bottom: 1px solid black;
+}
+
+a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  height: 200px;               /* je laisse comme tu l'avais */
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 2vw;                    /* 20px -> vw */
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.checkbtn{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/* ------------------------------- START : WELCOMMING HEAD  --------------------------------------- */
+
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;            /* 150px -> vh */
+  gap: 4vw;                    /* 40px -> vw */
+}
+
+#price {
+  width: 20vw;                 /* 200px -> vw */
+  max-width: 250px;            /* limite max */
+  accent-color: #760e03c3;
+}
+
+.range-min,
+.range-max {
+  font-size: 10px;
+}
+
+label{
+  color: #6a1010;
+  font-size: 18px;
+}
+
+#item{
+  width: 20vw;                 /* 200px -> vw */
+  max-width: 220px;
+  border-radius: 40px;
+  text-align: center;
+  color: #6a1010;
+}
+
+.start {
+  background-image: url(./public/couv.png);
+  width: 96vw;
+  height: 65vh;                /* 600px -> vh */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4vw;          /* 80px -> vw */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;                    /* 30px -> vh */
+  margin: 2vh 2vw;             /* 20px -> vh/vw */
+}
+
+h1{
+  color: rgba(250, 252, 252, 0.782);
+  text-align: center;
+  font-size: 4vw;              /* 60px -> vw */
+  padding-top: 4em ;
+}
+
+.desire{
+  width: 25vw;                 /* 300px -> vw */
+  max-width: 320px;
+  border-radius: 60px;
+  padding: 1em 1em;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.starting{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+/* ---------------------------------   SECTION : CARD PAD -------------------------------------- */
+
+.pad {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: nowrap;
+  max-width: 70vw;
+  margin: 20vh auto;
+  animation-fill-mode: both;
+  animation-timing-function: 0.4s;
+}
+
+/* Style d’une card */
+.card {
+  background: white;
+  border-radius: 16px;
+  width: 30%;
+  padding: 1.5vw;              /* 16px -> vw */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 35vh;                /* 350px -> vh */
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.card .title{
+  color: #6a1010;
+  text-align: center;
+  margin-top: 1.5vh;           /* 15px -> vh */
+  font-size: larger;
+  text-decoration: overline;
+}
+
+.card .time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  width: 80px;
+  margin: 0.8vh auto;          /* 8px -> vh */
+}
+
+p{
+  margin-top: 2vh;             /* 20px -> vh */
+}
+
+.card button {
+  background-color: #6a1010;
+  color: white;
+  border-radius: 40px;
+  margin-top: 3vh;             /* 30px -> vh */
+  margin-bottom: 3vh;          /* 30px -> vh */
+}
+
+.like-btn input {
+  display: none;
+}
+
+.heart {
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 0.5;
+}
+
+.like-btn input:checked + .heart {
+  opacity: 1;
+}
+
+/* ---------------------------------------- FIRST: GUIDE --------------------------------- */
+
+.first {
+  display: flex;
+  align-items: flex-start;
+  gap: 4vw;                    /* 40px -> vw */
+  padding: 6vh 6vw;            /* 6em 6em -> vh/vw */
+  max-width: 1200px;
+  margin: 20vh auto;           /* 200px -> vh */
+}
+
+.first .script h2,
+.first .script h5 {
+  color:#6a1010;
+  font-size: larger;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.first .script h5 {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.first .script p{
+  font-style: italic;
+  font-size: larger;
+  margin-top: 2vh;             /* 20px -> vh */
+}
+
+.guide-card img {
+  width: auto;
+  max-width: 20vw;             /* 320px -> vw */
+  max-height: 60vh;            /* 700px -> vh */
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin-top: 6vh;             /* 100px -> vh */
+}
+
+.first .script .p{
+  color: black;
+}
+
+.go{
+  background-color: #6a1010;
+  color: white;
+  font-size: smaller;
+  border-radius: 4px;
+  margin-top: 10vh;             /* 40px -> vh */
+  padding: 0.1em 0.1em;
+}
+
+
+/* ------------------------------------ SECOND : FAQ ------------------------------------ */
+
+.second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4vh 4vw;            /* 20px -> vh/vw */
+  margin: 20vh 12vh;            /* 150px -> vh */
+}
+
+.second h2,
+.second h5{
+  color:#6a1010;
+  font-size: larger;
+  margin-bottom: 4vh;          /* 50px -> vh */
+}
+
+.second h2 {
+  border-bottom: 2px solid #6a1010;
+  padding-bottom: 2vh;         /* 25px -> vh */
+  gap: 30px;
+}
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 700px;
+  font-size: 20px;
+  gap: 4vh;                    /* 40px -> vh */
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* petit chevron */
+.faq-item summary::after {
+  content: "▾";
+  font-size: 14px;
+  color: #777;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+/* quand c’est ouvert, on tourne la flèche */
+.faq-item[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+/* ----------------------------- THIRD : OTHER DESTINATIONS --------------------------------------- */
+
+section.third{
+  margin: 20vh auto;
+
+}
+
+
+.third h2{
+  color: #6a1010;
+  margin-bottom: 8vh;          /* 100px -> vh */
+  text-align: center;
+}
+
+.destination h4,
+.destination h6 {
+  margin: 4px 0;
+  color: #6a1010;
+  font-size: larger;
+}
+
+.main-destination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;                    /* 24px -> vw */
+  justify-content: center;
+  padding: 3vh 0;              /* 20px -> vh */
+}
+
+.destination{
+  width: 22vw;                 /* 250px -> vw */
+  max-width: 260px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 1.5vw;              /* 16px -> vw */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;                    /* 30px -> vh */
+  background: rgba(244, 245, 248, 0.62);
+}
+
+.mini-menu {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1vh 0;              /* 8px -> vh */
+  font-size: 14px;
+}
+
+.destination img {
+  width: 100%;
+  height: 30vh;                /* 250px -> vh */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 1vh;             /* 10px -> vh */
+}
+
+.see-more {
+  margin: 3vh 3vw;             /* 30px -> vh/vw */
+  padding: 1vh 1.5vw;          /* 8px 16px -> vh/vw */
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #6a1010;
+  color:#ccc
+}
+
+
+
+/* ---------------------------------- FOOTER ----------------------------------- */
+
+
+footer {
+  background: linear-gradient( 135deg, #f2e5d0 0%, #d8b8a0 50%, #6a1010af 100% );
+  color: #4a1d1d;               /* texte foncé */
+  padding: 1vh 1.5vw;             /* moins de padding => footer plus petit */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;              /* pour le mobile */
+  border-radius: 2vw;
+  gap: 2vh;                     /* moins d'espace entre les blocs */
+  margin: 8vh 2vw 4vh;          /* moins de marge => plus compact */
+}
+
+
+
+footer h5,
+footer .legend {
+  color: #4a1d1d;
+}
+
+
+
+.help {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+}
+
+.help h5 {
+  flex-basis: 100%;
+}
+
+
+.help .size {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+
+
+.legend {
+  color: #4a1d1d;
+  font-size: 0.9rem;
+}
+
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.newsletter .newletter {
+  padding: 0.3em 1.7em;
+  border-radius: 999px;
+  border: none;
+  width: 100%;
+  max-width: 320px;
+  font-size: 0.9rem;
+  margin-right: 6em;
+}
+
+
+.newsletter button {
+  padding: 0.3em;
+  border-radius: 999px;
+  border: none;
+  background: #f5e9d8;
+  color: #6a1010;
+  font-weight: 600;
+
+}
+
+
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.social-media h5 {
+  flex-basis: 100%;
+
+}
+
+
+.social-media .size {
+  width: 28px;
+  height: auto;
+  display: block;
+}
+
+
+.social-media .legend {
+  margin-right: 12px;
+}
+
+.end {
+  margin: 5vh auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre le logo ET la nav */
+  gap: 2vh;
+}
+
+
+.end a {
+  color: #6a1010;
+  font-size: 1rem;
+}

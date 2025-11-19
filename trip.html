@@ -1,11 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="trip.css" />
+  <link rel="icon" type="./public/favicon-logo.png" href="/public/favicon-logo.png" alt="logo avec temple japonnais">
+  <title>JapanTrip</title>
 </head>
+
 <body>
-    <h1></h1>
+  <header>
+    <div class="logo">
+      <img src="/public/image-logo-removebg-preview.png" alt="image-logo" />
+    </div>
+
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="trip.html">Voyage</a></li>
+        <li><a href="technology.html">Technologie</a></li>
+        <li><a href="architectural.html">Architecture</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-------------------------------------------------------------------- START -->
+    <div class="start">
+      <h1>Le voyage qui est fait pour Vous !</h1>
+      <input class="desire" id="want" type="text" name="want" placeholder=" Quelles sont vos envies ? " />
+    </div>
+
+    <!-------------------------------------------------------------------- FORM -->
+    <div class="form">
+      <label for="range">Budget :</label>
+      <span class="range-min">100€</span>
+
+      <input type="range" id="price" name="price" min="100" max="10000" />
+
+      <span class="range-max">1000€</span>
+
+      <label for="sort">Filter par :</label>
+      <select name="item" id="item">
+        <option value="authentic">Authentique</option>
+        <option value="adventure">Aventure</option>
+        <option value="history">Histoire & culture</option>
+        <option value="insolite">Insolite</option>
+      </select>
+    </div>
+
+    <!------------------------------------------------------------------- PAD / VOYAGES -->
+    <section class="pad">
+      <div class="card">
+        <img src="./public/authentique.png" alt="Japonnaise tenue traditionnelle à Kyoto" />
+        <span class="title">Authentique</span>
+
+        <label class="like-btn">
+          <input type="checkbox" />
+          <span class="heart">❤️</span>
+        </label>
+
+        <span class="time">10 jours</span>
+        <p>Tokyo → Hakone → Kyoto → Nara → Osaka</p>
+        <button> 2500 € </button>
+      </div>
+
+      <div class="card">
+        <img src="./public/histoire.png" alt="Tokyo la nuit" />
+        <span class="title">Histoire & Culture</span>
+
+        <label class="like-btn">
+          <input type="checkbox" />
+          <div class="heart">❤️</div>
+        </label>
+
+        <span class="time">7 jours</span>
+        <p>Tokyo → Yokohama → Tokaïdo → Nagoya</p>
+        <button> 1200 € </button>
+      </div>
+
+      <div class="card">
+        <img src="./public/aventure.png" alt="Randonneur dans les montagnes japonnaises, torii en face de lui" />
+        <span class="title">Nature & Aventure</span>
+
+        <label class="like-btn">
+          <input type="checkbox" />
+          <div class="heart">❤️</div>
+        </label>
+
+        <span class="time">8 jours</span>
+        <p>Alpes japonaises → Kanazawa → Takayama</p>
+        <button> 1850 € </button>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------- GUIDE -->
+    <section class="first">
+      <div class="script">
+        <h2>Notre guide d'expériences uniques et authentiques au Japon</h2>
+        <h5>TAEJUN</h5>
+        <h5>originaire de Corée du Sud, installé à Nara depuis 25 ans</h5>
+
+        <p>
+          Je me souviens encore de mon premier matin à Tokyo :
+          les gratte-ciels dorés par le lever du soleil, les câbles qui bourdonnaient au-dessus de ma tête,
+          et juste au coin de la rue… un petit temple silencieux coincé entre deux immeubles futuristes.
+        </p>
+
+        <p>
+          C’est ce contraste qui m’a captivé :
+          un pays où l’architecture raconte mille ans d’histoire,
+          où la technologie se vit à chaque pas,
+          et où chaque voyage devient une aventure.
+        </p>
+
+        <p>
+          Depuis ce jour, j’explore le Japon sans relâche : ses ruelles traditionnelles, ses laboratoires de
+          robotique, ses sanctuaires perchés dans la montagne, ses musées d’art numérique, ses villages classés au patrimoine.
+        </p>
+
+        <p>Aujourd’hui, j’ai décidé de rassembler tout cela ici :</p>
+        <p>Un guide vivant, qui mêle voyage, architecture et technologie, pour vous montrer le Japon tel que je le vois chaque jour.</p>
+
+        <p>Alors… bienvenue dans mon Japon !</p>
+
+        <a href="contact.html" class="go">Contactez-moi pour vos visites au Japon !</a>
+
+      </div>
+
+      <div class="guide-card">
+        <img src="./public/taejun.png" alt="portrait du guide jeune homme souriant" />
+      </div>
+    </section>
+
+    <!----------------------------------------------------------------------------------------- FAQ -->
+    <section class="second">
+      <h2>Voyage au Japon</h2>
+      <h5>Questions fréquentes</h5>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Quel budget prévoir pour un voyage au Japon ?</summary>
+          <p>
+            Le budget dépend de la saison et du style de voyage, mais comptez
+            entre 80€ et 150€ par jour et par personne (hors vol).
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Quelle est la meilleure période pour partir ?</summary>
+          <p>
+            Le printemps (sakura) et l’automne (momiji) sont les périodes les plus agréables,
+            avec une météo douce et de superbes paysages.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Peut-on se déplacer facilement en train au Japon ?</summary>
+          <p>
+            Oui, le réseau ferroviaire est très efficace.
+            Le Japan Rail Pass permet de réduire fortement les coûts des longs trajets.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!----------------------------------------------------------------------- OTHER DESTINATIONS -->
+    <section class="third">
+      <h2>Nos autres destinations :</h2>
+
+      <div class="main-destination">
+
+        <div class="destination">
+          <h4>V I E T</h4>
+          <h6>VIETNAM À MOTO</h6>
+
+          <div class="mini-menu">
+            <h6>INSOLITE</h6>
+            <h6>10 JOURS</h6>
+          </div>
+
+          <img src="./public/vietnam.png" alt="Homme à moto dans les montagnes vietnamiennes" />
+          <a href="viet.html" class="go">En savoir plus</a>
+        </div>
+
+        <div class="destination">
+          <h4>I N D</h4>
+          <h6>INDE AU BORD DU GANGE</h6>
+          <div class="mini-menu">
+            <h6>AUTHENTIQUE</h6>
+            <h6>10 JOURS</h6>
+          </div>
+
+          <img src="./public/gange1.png" alt="Barque sur le Gange" />
+          <a href="inde.html" class="go">En savoir plus</a>
+        </div>
+
+        <div class="destination">
+          <h4>C A M</h4>
+          <h6>CAMBODGE CULTURE & TRADITION</h6>
+
+          <div class="mini-menu">
+            <h6>CULTURE</h6>
+            <h6>10 JOURS</h6>
+          </div>
+
+          <img src="./public/cambodge.png" alt="Temple d'Angkor" />
+          <a href="cam.html" class="go">En savoir plus</a>
+        </div>
+
+        <div class="destination">
+          <h4>L A O</h4>
+          <h6>LAOS HORS DES SENTIERS BATTUS</h6>
+
+          <div class="mini-menu">
+            <h6>AVENTURE</h6>
+            <h6>10 JOURS</h6>
+          </div>
+
+          <img src="./public/laos.png" alt="Village coloré au Laos" />
+          <a href="lao.html" class="go">En savoir plus</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------- FOOTER-->
+    <footer>
+    <div class="help">
+      <h5>Prêt à partir ?</h5>
+
+      <img class="size" src="./public/avion.png" alt="logo avion" />
+      <span class="legend">Rechercher un vol</span>
+
+      <img class="size" src="./public/voiture.png" alt="logo voiture" />
+      <span class="legend">Location de voiture</span>
+
+      <img class="size" src="public/assurance.png" alt="logo assurance voyage" />
+      <span class="legend">Assurance voyage</span>
+      </div>
+    <div class="newsletter">
+      <h5>Recevoir notre actualité : </h5>
+
+      <input class="newletter" id="want" type="email" name="nomprenom@gmail.com" placeholder=" votremail@mail.com " />
+      <button> Abonnement à la Newsletter</button>
+    </div>
+    <div class="social-media">
+      <h5>Retrouvez-nous sur nos réseaux sociaux : </h5>
+      <img class="size" src="./public/facebook.png" alt="facebook" />
+      <span class="legend">Facebook</span>
+
+      <img class="size" src="./public/instagram.png" alt="instagram" />
+      <span class="legend">Instagram</span>
+
+      <img class="size" src="./public/twiter.png" alt="Twitter" />
+      <span class="legend">Twitter</span>
+    </div>
+
+    <nav class="end">
+      <div class="logo">
+      <img src="/public/image-logo-removebg-preview.png" alt="image-logo" />
+    </div>
+     <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="trip.html">Voyage</a></li>
+        <li><a href="technology.html">Technologie</a></li>
+        <li><a href="architectural.html">Architecture</a></li>
+      </ul>
+    </nav>
+
+    <div class="Copyright">
+      <p>© 2025 JAPAN TRIP . Tous droits réservés        |            Mentions légales </p>
+
+    </div>
+
+
+    </footer>
+
+  </main>
 </body>
 </html>

@@ -9,48 +9,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <div class="logo">
-            <img src="favicon.png" alt="image-logo">
+            <img src="favicon.png" alt="Logo Sony">
         </div>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
+        <nav role="navigation" aria-label="Navigation principale">
+            <input type="checkbox" id="check" aria-hidden="true">
+            <label for="check" class="checkbtn" aria-label="Ouvrir le menu" aria-controls="nav-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </label>
-            <ul>
-                <li><a href="#">Acceuil</a></li>
-                <li><a href="#">Voyage</a></li>
-                <li><a href="#">Technologie</a></li>
-                <li><a href="#">Architecture</a></li>
+            <ul id="nav-menu">
+                <li><a href="#" aria-label="Aller a la page d'accueil">Acceuil</a></li>
+                <li><a href="#" aria-label="Aller a la page voyage">Voyage</a></li>
+                <li><a href="#" aria-label="Aller a la page technologie">Technologie</a></li>
+                <li><a href="#" aria-label="Aller a la page architecture">Architecture</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="anchor-nav">
-        <a href="#about" class="anchor-dot" title="A propos"></a>
-        <a href="#founders" class="anchor-dot" title="Fondateurs"></a>
-        <a href="#inventions" class="anchor-dot" title="Inventions"></a>
-        <a href="#divisions" class="anchor-dot" title="Divisions"></a>
-        <a href="#revenus" class="anchor-dot" title="Revenus"></a>
-        <a href="#stats" class="anchor-dot" title="Statistiques"></a>
-        <a href="#contact" class="anchor-dot" title="Contact"></a>
-    </div>
+    <nav class="anchor-nav" role="navigation" aria-label="Navigation rapide">
+        <a href="#about" class="anchor-dot" aria-label="Aller a la section A propos"></a>
+        <a href="#founders" class="anchor-dot" aria-label="Aller a la section Fondateurs"></a>
+        <a href="#inventions" class="anchor-dot" aria-label="Aller a la section Inventions"></a>
+        <a href="#divisions" class="anchor-dot" aria-label="Aller a la section Divisions"></a>
+        <a href="#revenus" class="anchor-dot" aria-label="Aller a la section Revenus"></a>
+        <a href="#stats" class="anchor-dot" aria-label="Aller a la section Statistiques"></a>
+        <a href="#contact" class="anchor-dot" aria-label="Aller a la section Contact"></a>
+    </nav>
 
     <section class="hero-banner">
         <h1>SONY Corporation</h1>
         <p class="subtitle">L'innovation qui change le monde</p>
     </section>
 
-    <section id="about" class="content-section">
+    <section id="about" class="content-section" aria-labelledby="about-title">
         <div class="description-box">
-            <h2>A propos de Sony</h2>
+            <h2 id="about-title">A propos de Sony</h2>
             <p>Sony Corporation est une multinationale japonaise leader dans l'electronique, le divertissement et les technologies. Fondee en 1946, Sony a revolutionne l'industrie avec des innovations qui ont marque des generations.</p>
         </div>
     </section>
 
-    <section id="founders" class="content-section">
-        <h2 class="section-title">Les Fondateurs</h2>
+    <section id="founders" class="content-section" aria-labelledby="founders-title">
+        <h2 id="founders-title" class="section-title">Les Fondateurs</h2>
         <div class="cards-container">
             <div class="card">
                 <img src="Ibuka.png" alt="Masaru Ibuka">
@@ -73,8 +73,8 @@
         </div>
     </section>
 
-    <section id="inventions" class="content-section">
-        <h2 class="section-title">Premieres Inventions</h2>
+    <section id="inventions" class="content-section" aria-labelledby="inventions-title">
+        <h2 id="inventions-title" class="section-title">Premieres Inventions</h2>
         <div class="cards-container three-cards">
             <div class="card">
                 <img src="TR55.avif" alt="Sony TR-55">
@@ -119,8 +119,8 @@
         </div>
     </section>
 
-    <section id="divisions" class="content-section">
-        <h2 class="section-title">Divisions Principales</h2>
+    <section id="divisions" class="content-section" aria-labelledby="divisions-title">
+        <h2 id="divisions-title" class="section-title">Divisions Principales</h2>
         <div class="cards-container three-cards">
             <div class="card">
                 <div class="card-content">
@@ -155,8 +155,8 @@
         </div>
     </section>
 
-    <section id="revenus" class="content-section">
-        <h2 class="section-title">Repartition des Revenus par Division</h2>
+    <section id="revenus" class="content-section" aria-labelledby="revenus-title">
+        <h2 id="revenus-title" class="section-title">Repartition des Revenus par Division</h2>
         <div class="stats-container">
             <div class="stat-item">
                 <h3>Gaming & Network Services</h3>
@@ -186,8 +186,8 @@
         </div>
     </section>
 
-    <section id="stats" class="content-section">
-        <h2 class="section-title">Statistiques Cles</h2>
+    <section id="stats" class="content-section" aria-labelledby="stats-title">
+        <h2 id="stats-title" class="section-title">Statistiques Cles</h2>
         <div class="stats-grid">
             <div class="stat-box">
                 <h3>Employes</h3>
@@ -217,49 +217,51 @@
         </div>
     </section>
 
-    <section id="contact" class="content-section formulaire">
-        <h2 class="section-title">Formulaire de Contact</h2>
+    <section id="contact" class="content-section formulaire" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="section-title">Formulaire de Contact</h2>
         <div class="description-box">
             <p>Pour des questions, envoyez votre message via ce formulaire</p>
-            <form action="/ma-page-question" method="post">
+            <form action="/ma-page-question" method="post" aria-label="Formulaire de contact">
                 <div class="form-group">
                     <label for="name">Nom :</label>
-                    <input type="text" id="name" name="user_name" required />
+                    <input type="text" id="name" name="user_name" required aria-required="true" />
                 </div>
                 <div class="form-group">
                     <label for="mail">E-mail :</label>
-                    <input type="email" id="mail" name="user_mail" required />
+                    <input type="email" id="mail" name="user_mail" required aria-required="true" />
                 </div>
                 <div class="form-group">
                     <label for="msg">Message :</label>
-                    <textarea id="msg" name="user_message" required></textarea>
+                    <textarea id="msg" name="user_message" required aria-required="true"></textarea>
                 </div>
-                <button type="submit" class="form-btn">Envoyer</button>
+                <button type="submit" class="form-btn" aria-label="Envoyer le formulaire">Envoyer</button>
             </form>
         </div>
     </section>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-left">
                 <h3>Qui t'amène ?</h3>
-                <div class="footer-links">
-                    <a href="#">Recherche de voyages</a>
-                    <a href="#">Location de voiture</a>
-                    <a href="#">Assurance voyage</a>
+                <nav class="footer-links" aria-label="Liens utiles">
+                    <a href="#" aria-label="Recherche de voyages">Recherche de voyages</a>
+                    <a href="#" aria-label="Location de voiture">Location de voiture</a>
+                    <a href="#" aria-label="Assurance voyage">Assurance voyage</a>
                     <p class="footer-info">Retrouvez-nous sur nos reseaux sociaux :</p>
-                    <div class="social-icons">
-                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="X.png" alt="X"></a>
+                    <div class="social-icons" role="navigation" aria-label="Reseaux sociaux">
+                        <a href="#" aria-label="Suivez-nous sur Facebook"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="#" aria-label="Suivez-nous sur Instagram"><img src="instagram.png" alt="Instagram"></a>
+                        <a href="#" aria-label="Suivez-nous sur X"><img src="X.png" alt="X"></a>
                     </div>
-                </div>
+                </nav>
             </div>
 
             <div class="footer-right">
                 <h3>Reccueil notre actualite :</h3>
-                <input type="email" placeholder="Inserez votre email" class="footer-email">
-                <button class="footer-btn">Abonnement a la Newsletter</button>
+                <form aria-label="Inscription newsletter">
+                    <input type="email" placeholder="Inserez votre email" class="footer-email" aria-label="Adresse email pour la newsletter">
+                    <button type="submit" class="footer-btn" aria-label="S'abonner a la newsletter">Abonnement a la Newsletter</button>
+                </form>
             </div>
         </div>
 

@@ -9,9 +9,14 @@ body {
     background: linear-gradient(180deg, #faf1e4 0%, #f1ddba 60%, #e8cfa3 100%);
     color: #2c2416;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -20,6 +25,11 @@ header {
     height: 70px;
     padding: 10px 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body {
+    padding-top: 70px;
 }
 
 .logo {
@@ -73,6 +83,11 @@ ul {
     cursor: pointer;
 }
 
+.checkbtn i::before {
+    content: '\f0c9';
+    font-family: FontAwesome;
+}
+
 #check {
     display: none;
 }
@@ -100,6 +115,8 @@ ul {
         transition: transform 0.4s ease;
         box-sizing: border-box;
         overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 999;
     }
 
     nav ul li {
@@ -110,6 +127,7 @@ ul {
         font-size: 22px;
         text-decoration: none;
         color: #6a1010;
+        word-wrap: break-word;
     }
 
     #check:checked ~ ul {
@@ -568,14 +586,21 @@ footer {
 @media (max-width: 768px) {
     .hero-banner h1 {
         font-size: 2em;
+        word-wrap: break-word;
     }
 
     .section-title {
         font-size: 1.6em;
+        word-wrap: break-word;
     }
 
     .description-box {
         padding: 25px;
+    }
+
+    .description-box p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .stats-grid {
@@ -586,6 +611,13 @@ footer {
         min-width: 100%;
     }
 
+    .stat-item h3,
+    .stat-box h3,
+    .card h3 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
     .card img {
         height: 180px;
     }
@@ -593,6 +625,11 @@ footer {
     .card-btn {
         padding: 8px 15px;
         font-size: 0.9em;
+    }
+
+    .card-content p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     nav {
@@ -605,6 +642,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding-top: 60px;
+    }
+
     header {
         height: 60px;
         padding: 5px 10px;
@@ -621,10 +662,12 @@ footer {
 
     .hero-banner h1 {
         font-size: 1.8em;
+        word-wrap: break-word;
     }
 
     .section-title {
         font-size: 1.4em;
+        word-wrap: break-word;
     }
 
     .content-section {
@@ -635,12 +678,29 @@ footer {
         padding: 0 15px 15px 15px;
     }
 
+    .card-content h3 {
+        font-size: 1.2em;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
     .description-box {
         padding: 20px;
     }
 
+    .big-number {
+        font-size: 2em;
+        word-wrap: break-word;
+    }
+
     .footer-content {
         padding: 0 10px;
+    }
+
+    .footer-links a,
+    .footer-info {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .social-icons img {

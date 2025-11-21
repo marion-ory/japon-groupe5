@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(180deg, #faf1e4 0%, #f1ddba 60%, #e8cfa3 100%);
+    height: 100%;
+
+}
+.carouselle{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/sakura_header.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+#hyppertext{
+    color: brown;
+}
+.carouselles-title-1{
+    font-size: 80px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    color: #6a1010 ;
+}
+.second-carouselles-title{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    color: #6a1010 ;
+}
+.content-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 200px;    */
+    flex-direction: row;
+    /* margin: 40px; */
+    gap: 70px;
+}
+.icon-service{
+    font-size: 80px;
+    color: #6a1010;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.service-div{
+    width: 400px;
+    
+}
+#hyppertext{
+     margin: 40px;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    color: #6a1010 ;
+}
+.service-div-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/trip.png);
+    height: 400px;
+    width: 300px;
+    background-position: center;
+    border: 10px solid #6a1010;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+
+}
+.service-div-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/Bâtiment-ciel-bleu.png);
+    height: 400px;
+    width: 300px;
+    border: 10px solid #6a1010;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+
+}
+.service-div-3{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/mainarchitecture.png);
+    height: 400px;
+    width: 300px;
+    border: 10px solid #6a1010;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+
+}
+.content-service-lien{
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff ;
+}
+.about-content {
+    display: flex;
+    padding: 60px;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 150px;
+}
+.about-content-1{
+    height: 500px;
+    width: 540px;
+}
+.about-content-2{
+    height: 500px;
+    width: 540px;
+}
+.about-title{
+    font-size: 40px;
+    color: #6a1010 ;
+}
+.title-principal{
+    font-size: 80px;
+    color: #6a1010 ;
+    text-align: center;
+    padding: 50px;
+}
+.checkbtn{
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .checkbtn {
+    display: block; /* Affiche l’icône hamburger */
+    }
+    body{
+    width: 100%;
+  }
+  .carouselle{
+    width: 100%;
+    margin: 0;
+  }
+  .title-principal{
+    font-size: 40px;
+    color: #6a1010 ;
+    text-align: center;
+    padding: 50px;
+   
+    }
+    .content-service{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .about-content{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    place-items: center; 
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+  }
+ 
+  .carouselles-title-1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    color: #6a1010 ;
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+    .checkbtn {
+    display: block; /* Affiche l’icône hamburger */
+    }
+    body{
+    width: 100%;
+  }
+  .carouselle{
+    width: 100%;
+    margin: 0;
+  }
+  .title-principal{
+    font-size: 40px;
+    color: #6a1010 ;
+    text-align: center;
+    padding: 50px;
+   
+    }
+    .content-service{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .about-content{
+     display: grid;
+        width: 70%;
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+        gap: 30px;
+        padding-bottom: 50px;
+  }
+ 
+  .carouselles-title-1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+    color: #6a1010 ;
+    }
+}

@@ -6,16 +6,18 @@
   <link rel="stylesheet" href="trip.css" />
   <link rel="icon" type="./public/favicon-logo.png" href="/public/favicon-logo.png" alt="logo avec temple japonnais">
   <title>JapanTrip</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <header>
+  <header aria-label="En-tête du site">
     <div class="logo">
       <img src="/public/image-logo-removebg-preview.png" alt="image-logo" />
     </div>
 
-    <nav>
-      <input type="checkbox" id="check" />
+    <nav aria-label="Menu principal">
+      <input type="checkbox" id="check" aria-label="Ouvrir ou fermer le menu de navigation" />
       <label for="check" class="checkbtn">
         <i class="fa fa-bars"></i>
       </label>
@@ -29,25 +31,39 @@
     </nav>
   </header>
 
-  <main>
+  <main aria-label="Contenu principal du site">
 
     <!-------------------------------------------------------------------- START -->
     <div class="start">
       <h1>Le voyage qui est fait pour Vous !</h1>
-      <input class="desire" id="want" type="text" name="want" placeholder=" Quelles sont vos envies ? " />
+      <input
+        class="desire"
+        id="want"
+        type="text"
+        name="want"
+        placeholder=" Quelles sont vos envies ? "
+        aria-label="Quelles sont vos envies de voyage ?"
+      />
     </div>
 
     <!-------------------------------------------------------------------- FORM -->
-    <div class="form">
+    <div class="form" aria-label="Filtres de recherche de voyage">
       <label for="range">Budget :</label>
       <span class="range-min">100€</span>
 
-      <input type="range" id="price" name="price" min="100" max="10000" />
+      <input
+        type="range"
+        id="price"
+        name="price"
+        min="100"
+        max="10000"
+        aria-label="Sélectionner votre budget pour le voyage"
+      />
 
       <span class="range-max">1000€</span>
 
       <label for="sort">Filter par :</label>
-      <select name="item" id="item">
+      <select name="item" id="item" aria-label="Filtrer les voyages par type">
         <option value="authentic">Authentique</option>
         <option value="adventure">Aventure</option>
         <option value="history">Histoire & culture</option>
@@ -56,52 +72,52 @@
     </div>
 
     <!------------------------------------------------------------------- PAD / VOYAGES -->
-    <section class="pad">
-      <div class="card">
+    <section class="pad" aria-label="Liste des voyages proposés">
+      <article class="card">
         <img src="./public/authentique.png" alt="Japonnaise tenue traditionnelle à Kyoto" />
         <span class="title">Authentique</span>
 
-        <label class="like-btn">
-          <input type="checkbox" />
+        <label class="like-btn" aria-label="Ajouter le voyage Authentique aux favoris">
+          <input type="checkbox" aria-label="Cochez pour ajouter ce voyage aux favoris" />
           <span class="heart">❤️</span>
         </label>
 
         <span class="time">10 jours</span>
         <p>Tokyo → Hakone → Kyoto → Nara → Osaka</p>
         <span class="price"> 2500 € </span>
-      </div>
+      </article>
 
-      <div class="card">
+      <article class="card">
         <img src="./public/histoire.png" alt="Tokyo la nuit" />
         <span class="title">Histoire & Culture</span>
 
-        <label class="like-btn">
-          <input type="checkbox" />
+        <label class="like-btn" aria-label="Ajouter le voyage Histoire & Culture aux favoris">
+          <input type="checkbox" aria-label="Cochez pour ajouter ce voyage aux favoris" />
           <div class="heart">❤️</div>
         </label>
 
         <span class="time">7 jours</span>
         <p>Tokyo → Yokohama → Tokaïdo → Nagoya</p>
         <span class="price"> 1200 € </span>
-      </div>
+      </article>
 
-      <div class="card">
+      <article class="card">
         <img src="./public/aventure.png" alt="Randonneur dans les montagnes japonnaises, torii en face de lui" />
         <span class="title">Nature & Aventure</span>
 
-        <label class="like-btn">
-          <input type="checkbox" />
+        <label class="like-btn" aria-label="Ajouter le voyage Nature & Aventure aux favoris">
+          <input type="checkbox" aria-label="Cochez pour ajouter ce voyage aux favoris" />
           <div class="heart">❤️</div>
         </label>
 
         <span class="time">8 jours</span>
         <p>Alpes japonaises → Kanazawa → Takayama</p>
         <span class="price"> 1800 € </span>
-      </div>
+      </article>
     </section>
 
     <!---------------------------------------------------------------------------------- GUIDE -->
-    <section class="first">
+    <section class="first" aria-label="Présentation du guide">
       <div class="script">
         <h2>Notre guide d'expériences uniques et authentiques au Japon</h2>
         <h5>TAEJUN</h5>
@@ -130,7 +146,7 @@
 
         <p>Alors… bienvenue dans mon Japon !</p>
 
-        <a href="contact.html" class="go">Contactez-moi pour vos visites au Japon !</a>
+        <a href="contact.html" class="go" aria-label="Contactez le guide pour organiser vos visites au Japon">Contactez-moi pour vos visites au Japon !</a>
 
       </div>
 
@@ -140,7 +156,7 @@
     </section>
 
     <!----------------------------------------------------------------------------------------- FAQ -->
-    <section class="second">
+    <section class="second" aria-label="Questions fréquentes sur le voyage au Japon">
       <h2>Voyage au Japon</h2>
       <h5>Questions fréquentes</h5>
 
@@ -172,12 +188,12 @@
     </section>
 
     <!----------------------------------------------------------------------- OTHER DESTINATIONS -->
-    <section class="third">
+    <section class="third" aria-label="Autres destinations proposées">
       <h2>Nos autres destinations :</h2>
 
       <div class="main-destination">
 
-        <div class="destination">
+        <article class="destination">
           <h4>V I E T</h4>
           <h6>VIETNAM À MOTO</h6>
 
@@ -187,10 +203,10 @@
           </div>
 
           <img src="./public/vietnam.png" alt="Homme à moto dans les montagnes vietnamiennes" />
-          <a  class="go"href="viet.html" class="go">En savoir plus</a>
-        </div>
+          <a href="viet.html" class="go">En savoir plus</a>
+        </article>
 
-        <div class="destination">
+        <article class="destination">
           <h4>I N D</h4>
           <h6>INDE AU BORD DU GANGE</h6>
           <div class="mini-menu">
@@ -199,10 +215,10 @@
           </div>
 
           <img src="./public/gange1.png" alt="Barque sur le Gange" />
-          <a class="go"href="https://www.india-roads.fr/fetes-festivals/holi-festival-couleurs/" class="go">En savoir plus</a>
-        </div>
+          <a href="https://www.india-roads.fr/fetes-festivals/holi-festival-couleurs/" class="go">En savoir plus</a>
+        </article>
 
-        <div class="destination">
+        <article class="destination">
           <h4>C A M</h4>
           <h6>CAMBODGE CULTURE & TRADITION</h6>
 
@@ -212,10 +228,10 @@
           </div>
 
           <img src="./public/cambodge.png" alt="Temple d'Angkor" />
-          <button class="go">En savoir plus</button>
-        </div>
+          <a href="" class="go">En savoir plus</a>
+        </article>
 
-        <div class="destination">
+        <article class="destination">
           <h4>L A O</h4>
           <h6>LAOS HORS DES SENTIERS BATTUS</h6>
 
@@ -226,60 +242,43 @@
 
           <img src="./public/laos.png" alt="Village coloré au Laos" />
           <button class="go">En savoir plus</button>
-        </div>
+        </article>
 
       </div>
     </section>
 
+
     <!---------------------------------------------------------------------------- FOOTER-->
-    <footer>
-    <div class="help">
-      <h5>Prêt à partir ?</h5>
-
-      <img class="size" src="./public/avion.png" alt="logo avion" />
-      <span class="legend">Rechercher un vol</span>
-
-      <img class="size" src="./public/voiture.png" alt="logo voiture" />
-      <span class="legend">Location de voiture</span>
-
-      <img class="size" src="public/assurance.png" alt="logo assurance voyage" />
-      <span class="legend">Assurance voyage</span>
-      </div>
-    <div class="newsletter">
-      <h5>Recevoir notre actualité : </h5>
-
-      <input class="newletter" id="want" type="email" name="nomprenom@gmail.com" placeholder=" votremail@mail.com " />
-      <button> Abonnement à la Newsletter</button>
-    </div>
-    <div class="social-media">
-      <h5>Retrouvez-nous sur nos réseaux sociaux : </h5>
-      <img class="size" src="./public/facebook.png" alt="facebook" />
-      <span class="legend">Facebook</span>
-
-      <img class="size" src="./public/instagram.png" alt="instagram" />
-      <span class="legend">Instagram</span>
-
-      <img class="size" src="./public/twiter.png" alt="Twitter" />
-      <span class="legend">Twitter</span>
-    </div>
-
-    <nav class="end">
-      <div class="logo">
-      <img src="/public/image-logo-removebg-preview.png" alt="image-logo" />
-    </div>
-     <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="trip.html">Voyage</a></li>
-        <li><a href="technology.html">Technologie</a></li>
-        <li><a href="architectural.html">Architecture</a></li>
-      </ul>
-    </nav>
-
-    <div class="Copyright">
-      <p>© 2025 JAPAN TRIP . Tous droits réservés        |            Mentions légales </p>
-
-    </div>
-
+    <footer aria-label="Pied de page du site">
+        <div>
+            <img width="100px" src="image/image-logo-removebg-preview.png" alt="">
+        </div>
+        <div>
+             <ul class="list-footer">
+                 <li><a class="lien-footer" href="index.html">Acceuil</a></li>
+                <li><a class="lien-footer" href="trip.html">Voyage</a></li>
+                <li><a class="lien-footer" href="technology.html">Technologie</a></li>
+                <li><a class="lien-footer" href="architectural.html">Architecture</a></li>
+                <li><a class="lien-footer" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="title-reseaux">Nos réseaux</h2>
+            <a href="https://www.facebook.com/?locale=fr_FR"><i class="fa-brands fa-facebook icon-footer"></a></i>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram icon-footer"></a></i>
+            <a href="https://x.com/?lang=fr"><i class="fa-brands fa-twitter icon-footer"></a></i>
+        </div>
+        <div>
+            <h2 class="title-reseaux">
+                Recevoir notre actualité :
+            </h2>
+            <section aria-label="c'est un section pour inscrire sur le Newsletter " class="newsletter">
+                <label>Email</label>
+                <input class="input-email"  type="email" placeholder="Email">
+                <button  class="btn-footer"> Abonner</button>
+            </section>
+        </div>
+    </footer>
 
     </footer>
 

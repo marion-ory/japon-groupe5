@@ -1,0 +1,155 @@
+/* ---------------------------- HEADER : NAVBAR ------------------------------------------- */
+*{
+  margin:0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 8vh;
+  padding: 1.5vh 3vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  width: 18vw;
+  max-width: 200px;
+  height: auto;
+  max-height: 8vh;
+  margin: 0;
+  padding: 1vh 0;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+nav{
+  display: flex;
+  padding: 2vh 3vw;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration-line: none;
+  justify-content: space-between;
+  color:  #6a1010 ;
+  font-size: 20px;
+  cursor: pointer;
+  bottom: 1px solid black;
+}
+
+a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  height: 200px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 2vw;                    /* 20px -> vw */
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.checkbtn{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f2e5d0 0%, #d8b8a0 50%, #6a1010af 100%);
+  color: #4a1d1d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centre verticalement */
+}
+
+
+h1 {
+  color: #4a1d1d;
+  margin-bottom: 2vh;
+  font-size: 2rem;
+  margin-bottom: 4vh;
+}
+
+form {
+
+  width: 55vw;
+  max-width: 520px;
+  border: 1.5px solid #6a1010;
+  border-radius: 20px;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  background: #f8efe1a9;
+}
+
+form div {
+  border-radius: 12px;
+  width: 100%;
+  padding: 0.6em 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  background: transparent;
+}
+
+form div > input,
+form div > select,
+form div > textarea {
+  background: #fffdfa;
+  border: 1px solid #6a1010;
+  border-radius: 999px;
+  padding: 0.5em 1.2em;
+  font-size: 0.9rem;
+  max-width: 100%;
+  outline: none;
+  text-align: center;
+}
+.text-client {
+  height: 6em;
+  padding: 0.8em 1.2em;
+  border-radius: 16px;
+  resize: vertical;
+}
+
+
+form button {
+  align-self: center;
+  margin-top: 1.5vh;
+  padding: 0.7em 2.2em;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background-color: #6a1010;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;}
+
+
+

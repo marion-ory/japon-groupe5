@@ -1,0 +1,178 @@
+
+ body {
+  background: linear-gradient(
+    180deg,
+    #d8f1f1 0%,   /* bleu ciel pâle */
+    #a8d8cf 30%,  /* bleu-vert pastel */
+    #6ab49a 65%,  /* vert doux montagne */
+    #316c55 100%  /* vert foncé humide */
+  );
+}
+
+
+
+
+
+
+/* ---------------------------- HEADER : NAVBAR ------------------------------------------- */
+*{
+  margin:0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 8vh;
+  padding: 1.5vh 3vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  width: 18vw;
+  max-width: 200px;
+  height: auto;
+  max-height: 8vh;
+  margin: 0;
+  padding: 1vh 0;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+nav{
+  display: flex;
+  padding: 2vh 3vw;            /* 20px -> vh/vw */
+  gap: 2vw;                    /* 25px -> vw */
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration-line: none;
+  justify-content: space-between;
+  color:  #6a1010 ;
+  font-size: 20px;
+  cursor: pointer;
+  bottom: 1px solid black;
+}
+
+a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  height: 200px;               /* je laisse comme tu l'avais */
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 2vw;                    /* 20px -> vw */
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.checkbtn{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/* ------------------------------- START : WELCOMMING HEAD  --------------------------------------- */
+
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;            /* 150px -> vh */
+  gap: 4vw;                    /* 40px -> vw */
+}
+
+#price {
+  width: 20vw;                 /* 200px -> vw */
+  max-width: 250px;            /* limite max */
+  accent-color:  #316c55 ;
+}
+
+.range-min,
+.range-max {
+  font-size: 10px;
+}
+
+label{
+  color:  #234e3e ;
+  font-size: 18px;
+}
+
+#item{
+  width: 20vw;                 /* 200px -> vw */
+  max-width: 220px;
+  border-radius: 40px;
+  text-align: center;
+  color: #234e3e;
+}
+
+.start {
+  background-image: url(./public/vietnam.png);
+  width: 96vw;
+  height: 65vh;                /* 600px -> vh */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4vw;          /* 80px -> vw */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;                    /* 30px -> vh */
+  margin: 2vh 2vw;             /* 20px -> vh/vw */
+}
+
+h1{
+  color: rgba(250, 252, 252, 0.782);
+  text-align: center;
+  font-size: 4vw;              /* 60px -> vw */
+  padding-top: 4em ;
+}
+
+.desire{
+  width: 25vw;                 /* 300px -> vw */
+  max-width: 320px;
+  border-radius: 60px;
+  padding: 1em 1em;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.starting{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+/* ---------------------------------   SECTION : CARD PAD -------------------------------------- */
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 2100px;
+  max-height: 2000px;
+  gap: 12px;
+  margin: 8em 4em 8em;
+
+
+}
+.card img{
+  width:70%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  border-radius: 2em;
+}

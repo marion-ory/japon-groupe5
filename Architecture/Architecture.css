@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: linear-gradient(180deg, #faf1e4 0%, #f1ddba 60%, #e8cfa3 100%);
+
+}
+.En-Tete{
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/image1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover; 
+    width: 100%;
+    height: 300px;
+
+
+}
+.title{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    color: white;
+}
+.title span::after{
+    content: 'Tradutionnelle';
+    animation: words 20s infinite ease-in;
+} 
+@keyframes words {
+    0%, 50%{
+        content: 'Tradutionnelle';
+        color: blue;
+    }
+   
+    50%, 100%{
+        content: " Moderne";
+        color: red;
+    }
+} 
+.about{
+    display: flex;
+}
+.content-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url(images/GettyImages-2150387953.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius:10px 50px 50px 10px;
+    margin: 0 30px;
+    width: 50%;
+    height: 80vh;
+    margin: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+}
+.content-1:hover{
+    transform: scaleX(1.2);
+        transition: 2s;
+}
+.content-2{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url(images/Architectures-japonaises-3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:50px 10px 10px 50px;
+    margin: 0 30px;
+    width: 50%;
+    height: 80vh;
+    margin: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+}
+.content-2:hover{
+    transform: scaleX(1.2);
+        transition: 2s;
+}
+
+.title-1{
+    color:  #6a1010 ;
+    position: relative;
+    font-size: 6rem;
+    padding: 6rem;
+    display: flex;
+    justify-content: end;
+    animation: spin 8s ease-out infinite;
+}
+@keyframes spin{
+    from {translate: 0;
+    }
+    to {translate: -100%;
+    }
+}
+.sous-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+  
+}
+.sous-content-img{
+    width: 100%;
+    border-radius: 10px;
+   
+}
+.sous-content-img:hover{
+    transform: scaleY(1.1);
+        transition: 1s;
+}
+
+.sous-content-1{
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
+    padding: 10px;
+}
+.sous-content-title{
+    color: #6a1010 ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sous-content-text{
+    color: gray;
+    padding-bottom: 15px;
+}
+.sous-content-a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #6a1010 ;
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+label{
+    font-size: 20px;
+    color: #6a1010 ;
+}
+input{
+   background-color: #eee;
+   border: none;
+   margin: 8px 0;
+   padding: 10px 15px;
+   width: 100%;
+   outline: none;
+   border-radius: 10px;
+}
+textarea{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+.form-resseaux{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 20%;
+    height: 2px;
+    background-color: grey;
+}
+.form-content{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top:20px ;
+}
+.google-form{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.google-form i{
+    margin-top: 30px ;
+        text-decoration: none;
+   font-size: 50px;
+   color: #6a1010;
+}
+.google-form i a{
+   cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+   color: #6a1010;
+   margin-bottom: 20px;
+}
+.btn{
+   background-color: #6a1010; 
+   text-align: center;
+   color: #e8cfa3;
+   width: 30%;
+   padding: 15px;
+   font-size: 18px;
+   border-radius: 10px;
+   border: none;
+}
+.newsletter{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .title{
+        font-size: 2rem;
+    }
+    .about{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        
+        width: 100%;
+    }
+    .content-2{
+         width: 80%; 
+         border-radius: 10px;
+    }
+    .content-1{
+         width: 80%; 
+         border-radius: 10px;
+    }
+    .title-1{
+        font-size: 25px;
+        padding: 1rem;
+    }
+    .sous-content{
+        display: grid;
+        place-items: center;
+        justify-self: center;
+        grid-template-columns: 1fr;
+    }
+    .btn{
+        width: 80%;
+        font-size: 15px;
+  
+    }
+    .form{
+        width: 80%;
+        margin: 20px; 
+   
+    }
+       body{
+        height: 100vb;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .title{
+        font-size: 2rem;
+    }
+    body{
+        height: 100vb;
+    }
+    .about{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        
+        width: 100%;
+    }
+    .content-2{
+         width: 80%; 
+         border-radius: 10px;
+    }
+    .content-1{
+         width: 80%; 
+         border-radius: 10px;
+    }
+    .title-1{
+        font-size: 55px;
+        padding: 1rem;
+    }
+    .sous-content{
+        display: grid;
+        place-items: center;
+        justify-self: center;
+        grid-template-columns: 1fr;
+    }
+    .btn{
+        width: 80%;
+        font-size: 15px;
+  
+    }
+    .form{
+        width: 80%;
+        display: flex;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+       margin-top: 160px;
+        place-items: center;
+    }
+    
+}

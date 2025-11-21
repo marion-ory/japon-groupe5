@@ -1,0 +1,655 @@
+body{
+  background: linear-gradient(180deg, #faf1e4 0%, #f1ddba 60%, #e8cfa3 100%);
+}
+
+/* ---------------------------- HEADER : NAVBAR ------------------------------------------- */
+*{
+  margin:0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 8vh;
+  padding: 1.5vh 3vw;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  width: 18vw;
+  max-width: 200px;
+  height: auto;
+  max-height: 8vh;
+  margin: 0;
+  padding: 1vh 0;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+nav{
+  display: flex;
+  padding: 2vh 3vw;            /* 20px -> vh/vw */
+  gap: 2vw;                    /* 25px -> vw */
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration-line: none;
+  justify-content: space-between;
+  color:  #6a1010 ;
+  font-size: 20px;
+  cursor: pointer;
+  bottom: 1px solid black;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 2vw;                    /* 20px -> vw */
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.checkbtn{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/* ------------------------------- START : WELCOMMING HEAD  --------------------------------------- */
+
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;            /* 150px -> vh */
+  gap: 4vw;                    /* 40px -> vw */
+}
+
+#price {
+  width: 20vw;                 /* 200px -> vw */
+  max-width: 250px;            /* limite max */
+  accent-color: #760e03c3;
+}
+
+.range-min,
+.range-max {
+  font-size: 10px;
+}
+
+label{
+  color: #6a1010;
+  font-size: 18px;
+}
+
+#item{
+  width: 20vw;                 /* 200px -> vw */
+  max-width: 220px;
+  border-radius: 40px;
+  text-align: center;
+  color: #6a1010;
+}
+
+.start {
+  background-image: url(./public/couv.png);
+  width: 96vw;
+  height: 65vh;                /* 600px -> vh */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4vw;          /* 80px -> vw */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;                    /* 30px -> vh */
+  margin: 2vh 2vw;             /* 20px -> vh/vw */
+}
+
+h1{
+  color: rgba(250, 252, 252, 0.782);
+  text-align: center;
+  font-size: 4vw;              /* 60px -> vw */
+  padding-top: 4em ;
+}
+
+.desire{
+  width: 25vw;                 /* 300px -> vw */
+  max-width: 320px;
+  border-radius: 60px;
+  padding: 1em 1em;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.starting{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+/* ---------------------------------   SECTION : CARD PAD -------------------------------------- */
+
+.pad {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: nowrap;
+  max-width: 70vw;
+  margin: 20vh auto;
+  animation-fill-mode: both;
+  animation-timing-function: 0.4s;
+}
+
+/* Style d’une card */
+.card {
+  background: white;
+  border-radius: 16px;
+  width: 30%;
+  padding: 1.5vw;              /* 16px -> vw */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 35vh;                /* 350px -> vh */
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.card .title{
+  color: #6a1010;
+  text-align: center;
+  margin-top: 1.5vh;           /* 15px -> vh */
+  font-size: larger;
+  text-decoration: overline;
+}
+
+.card .time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  width: 80px;
+  margin: 0.8vh auto;          /* 8px -> vh */
+}
+
+p{
+  margin-top: 2vh;             /* 20px -> vh */
+}
+
+.price {
+  background-color: #6a1010;
+  color: white;
+  border-radius: 40px;
+  margin-top: 3vh;             /* 30px -> vh */
+  margin-bottom: 3vh;          /* 30px -> vh */
+}
+
+.like-btn input {
+  display: none;
+}
+
+.heart {
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 0.5;
+}
+
+.like-btn input:checked + .heart {
+  opacity: 1;
+}
+
+/* ---------------------------------------- FIRST: GUIDE --------------------------------- */
+
+.first {
+  display: flex;
+  align-items: flex-start;
+  gap: 4vw;                    /* 40px -> vw */
+  padding: 6vh 6vw;            /* 6em 6em -> vh/vw */
+  max-width: 1200px;
+  margin: 20vh auto;           /* 200px -> vh */
+}
+
+.first .script h2,
+.first .script h5 {
+  color:#6a1010;
+  font-size: larger;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.first .script h5 {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.first .script p{
+  font-style: italic;
+  font-size: larger;
+  margin-top: 2vh;             /* 20px -> vh */
+}
+
+.guide-card img {
+  width: auto;
+  max-width: 20vw;             /* 320px -> vw */
+  max-height: 60vh;            /* 700px -> vh */
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin-top: 6vh;             /* 100px -> vh */
+}
+
+.first .script .p{
+  color: black;
+}
+
+.go{
+  background-color: #6a1010;
+  color: white;
+  font-size: smaller;
+  border-radius: 4px;
+  margin-top: 10vh;             /* 40px -> vh */
+  padding: 0.1em 0.1em;
+}
+
+
+/* ------------------------------------ SECOND : FAQ ------------------------------------ */
+
+.second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4vh 4vw;            /* 20px -> vh/vw */
+  margin: 20vh 12vh;            /* 150px -> vh */
+}
+
+.second h2,
+.second h5{
+  color:#6a1010;
+  font-size: larger;
+  margin-bottom: 4vh;          /* 50px -> vh */
+}
+
+.second h2 {
+  border-bottom: 2px solid #6a1010;
+  padding-bottom: 2vh;         /* 25px -> vh */
+  gap: 30px;
+}
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 700px;
+  font-size: 20px;
+  gap: 4vh;                    /* 40px -> vh */
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* petit chevron */
+.faq-item summary::after {
+  content: "▾";
+  font-size: 14px;
+  color: #777;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+/* quand c’est ouvert, on tourne la flèche */
+.faq-item[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+/* ----------------------------- THIRD : OTHER DESTINATIONS --------------------------------------- */
+
+section.third{
+  margin: 20vh auto;
+
+}
+
+
+.third h2{
+  color: #6a1010;
+  margin-bottom: 8vh;          /* 100px -> vh */
+  text-align: center;
+}
+
+.destination h4,
+.destination h6 {
+  margin: 4px 0;
+  color: #6a1010;
+  font-size: larger;
+}
+
+.main-destination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;                    /* 24px -> vw */
+  justify-content: center;
+  padding: 3vh 0;              /* 20px -> vh */
+}
+
+.destination{
+  width: 22vw;                 /* 250px -> vw */
+  max-width: 260px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 1.5vw;              /* 16px -> vw */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;                    /* 30px -> vh */
+  background: rgba(244, 245, 248, 0.62);
+}
+
+.mini-menu {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 1vh 0;              /* 8px -> vh */
+  font-size: 14px;
+}
+
+.destination img {
+  width: 100%;
+  height: 30vh;                /* 250px -> vh */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 1vh;             /* 10px -> vh */
+}
+
+.go {
+  display: inline-block;    /* empêche l’extension FULL width */
+  margin: 2vh auto 0 auto;  /* centré, marges verticales seulement */
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #6a1010;
+  color: #ccc;
+  text-align: center;
+  text-decoration: none;    /* SUPPRIME SOULIGNEMENT DES <a> */
+  width: fit-content;       /* taille automatiquement selon le texte */
+}
+
+
+
+/* ---------------------------------- FOOTER ----------------------------------- */
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 100px;
+    background: linear-gradient(180deg, #e8cfa3 0%, #d8b8a0 50%, #f5e6d3 100%);
+}
+.lien-footer{
+    text-decoration-line: none;
+    justify-content: space-between;
+    color:  #6a1010 ;
+    font-size: 20px;
+    cursor: pointer;
+    bottom: 1px solid black;
+}
+
+
+.lien-footer:hover{
+    color: black;
+    border-bottom: 1px solid black;
+    height: 200px;
+
+}
+.list-footer{
+    display: block;
+    list-style: none;
+    gap: 20px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.title-reseaux{
+    font-size: 20px;
+    color:  #6a1010 ;
+
+}
+.icon-footer{
+    font-size: 20px;
+    margin: 10px;
+    color:  #6a1010 ;
+    gap: 10px;
+
+
+}
+.input-email{
+   background-color: #eee;
+   border: none;
+   margin: 8px 0;
+   padding: 10px 15px;
+   width: 60%;
+   outline: none;
+   border-radius: 10px;
+}
+.btn-footer{
+   background-color: #6a1010;
+   text-align: center;
+   color: #e8cfa3;
+   width: 50%;
+   padding: 10px;
+   font-size: 12px;
+   border-radius: 10px;
+   border: none;
+}
+
+/* ------------------------------ RESPONSIVE TABLETTE (≤ 1024px) ---------------------------- */
+
+@media (max-width: 1024px) {
+
+  /* Hero */
+  .start {
+    height: 55vh;
+    width: 96vw;
+    margin: 2vh auto;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  .desire {
+    width: 40vw;
+  }
+
+  /* Filtres */
+  .form {
+    flex-wrap: wrap;
+    gap: 2vh;
+    margin-top: 8vh;
+  }
+
+  /* Cards principales */
+  .pad {
+    max-width: 90vw;
+    margin: 12vh auto;
+    gap: 3vw;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  /* Bloc guide */
+  .first {
+    max-width: 90vw;
+    gap: 3vw;
+    margin: 12vh auto;
+  }
+
+  .guide-card img {
+    max-width: 26vw;
+  }
+
+  /* Autres destinations */
+  .destination {
+    width: 30vw;
+  }
+
+  /* Footer un peu plus compact */
+  footer {
+    padding: 2vh 3vw;
+    margin: 6vh 2vw 3vh;
+  }
+}
+
+/* ================== MOBILE (≤ 768px) ================== */
+@media (max-width: 768px) {
+
+  /* Header : tout en colonne */
+  header {
+    flex-direction: column;
+    gap: 1vh;
+    height: auto;
+    padding: 1vh 4vw;
+  }
+
+  .logo {
+    width: 40vw;
+    max-width: 200px;
+  }
+
+  nav {
+    padding: 1vh 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  /* Hero */
+  .start {
+    width: 100vw;
+    height: 55vh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 6.5vw;
+    padding-top: 2.5em;
+  }
+
+  .desire {
+    width: 75vw;
+    margin-top: 1.5em;
+  }
+
+  /* Filtres */
+  .form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+    margin-top: 4vh;
+  }
+
+  #price,
+  #item {
+    width: 75vw;
+    max-width: none;
+  }
+
+  /* Cards principales (Authentique / Histoire / Aventure) */
+  .pad {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    margin: 8vh auto 6vh;
+  }
+
+  .card {
+    width: 85vw;
+  }
+
+  /* Bloc guide */
+  .first {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    max-width: 90vw;
+    padding: 4vh 0;
+    margin: 8vh auto;
+  }
+
+  .guide-card img {
+    max-width: 60vw;
+    margin-top: 3vh;
+  }
+
+  /* FAQ */
+  .second {
+    margin: 8vh 4vw;
+    padding: 3vh 2vw;
+  }
+
+  .faq {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Autres destinations */
+  .main-destination {
+    gap: 3vh;
+  }
+
+  .destination {
+    width: 80vw;
+    max-width: none;
+  }
+
+  /* Footer : une seule colonne */
+  footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0;
+    }
+    .input-email{
+        background-color: #eee;
+        border: none;
+        margin: 8px 0;
+        padding: 10px 15px;
+        width: 60%;
+        outline: none;
+        border-radius: 10px;}

@@ -143,7 +143,7 @@ ul {
 
 .hero-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(245, 230, 211, 1)),
-                url('Background.jpg');
+                url('../public/images/Background.jpg');
     background-size: cover;
     background-position: center;
     color: #6a1010;

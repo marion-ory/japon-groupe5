@@ -121,7 +121,7 @@ label{
 }
 
 .start {
-  background-image: url(./public/vietnam.png);
+  background-image: url(../public/images/vietnam.png);
   width: 96vw;
   height: 65vh;                /* 600px -> vh */
   background-size: cover;

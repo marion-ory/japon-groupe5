@@ -103,7 +103,7 @@ label{
 }
 
 .start {
-  background-image: url(./public/couv.png);
+  background-image: url(../public/images/couv.png);
   width: 96vw;
   height: 65vh;                /* 600px -> vh */
   background-size: cover;

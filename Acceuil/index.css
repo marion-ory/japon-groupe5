@@ -8,7 +8,7 @@ body{
 
 }
 .carouselle{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/sakura_header.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../public/images/sakura_header.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -62,7 +62,7 @@ body{
     color: #6a1010 ;
 }
 .service-div-1{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/trip.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../public/images/trip.png);
     height: 400px;
     width: 300px;
     background-position: center;
@@ -75,7 +75,7 @@ body{
 
 }
 .service-div-2{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/Bâtiment-ciel-bleu.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../public/images/Bâtiment-ciel-bleu.png);
     height: 400px;
     width: 300px;
     border: 10px solid #6a1010;
@@ -88,7 +88,7 @@ body{
 
 }
 .service-div-3{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/mainarchitecture.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../public/images/mainarchitecture.png);
     height: 400px;
     width: 300px;
     border: 10px solid #6a1010;

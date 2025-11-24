@@ -30,7 +30,8 @@ nav{
     justify-content: center;
     align-items: center;
 }
- a{
+
+ .lien-navbar{
     text-decoration-line: none;
     justify-content: space-between;
     color:  #6a1010 ;
@@ -40,7 +41,7 @@ nav{
     
   
 }
-a:hover{
+.lien-navbar:hover{
     color: black;
     border-bottom: 1px solid black;
     height: 200px;
